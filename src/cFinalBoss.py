@@ -7,6 +7,7 @@ class Ship:
     def __init__(self, draft, crew):
         self.draft = float(draft)
         self.crew = float(crew)
+        Ship.numbarco += 1
 
     def is_worth_it(self):
         """Function printing python version."""
