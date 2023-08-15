@@ -24,3 +24,9 @@ def test_Cruise():
     crucero = Cruise(0, 0, 0)
     with pytest.raises(ValueError):
         crucero.is_worth_it()
+
+
+def test_Cargo_letras():
+    with pytest.raises(ValueError):
+        Cargo4 = Cargo("hola", "93", 000, 0000)
+        Cargo4.is_worth_it()

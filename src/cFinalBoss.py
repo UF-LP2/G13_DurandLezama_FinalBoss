@@ -3,13 +3,15 @@
 
 class Ship:
     """Function printing python version."""
+
     numbarco = 0
 
     def __init__(self, draft, crew):
-        Ship.numbarco += 1
-        self.numbarco = Ship.numbarco
+
         self.draft = float(draft)
         self.crew = float(crew)
+        Ship.numbarco += 1
+        self.numbarco = Ship.numbarco
 
     def is_worth_it(self):
         """Function printing python version."""
@@ -23,9 +25,9 @@ class Cargo(Ship):
     """Function printing python version."""
 
     def __init__(self, cargo, quality, draft, crew):
-        self.cargo = float(cargo)
-        self.quality = (quality)
-        super().__init__(draft, crew)
+        self.cargo = cargo
+        self.quality = float(quality)
+        Ship.__init__(self, draft, crew)
 
     def checking_cargo(self):
         """Function printing python version."""
