@@ -3,11 +3,13 @@
 
 class Ship:
     """Function printing python version."""
+    numbarco = 0
 
     def __init__(self, draft, crew):
+        Ship.numbarco += 1
+        self.numbarco = Ship.numbarco
         self.draft = float(draft)
         self.crew = float(crew)
-        Ship.numbarco += 1
 
     def is_worth_it(self):
         """Function printing python version."""
