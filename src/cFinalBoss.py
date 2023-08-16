@@ -2,7 +2,7 @@
 
 
 class Ship:
-    """Function printing python version."""
+    """ clase de barco"""
     numbarco = 0
 
     def __init__(self, draft, crew):
@@ -28,7 +28,7 @@ class Cargo(Ship):
         super().__init__(draft, crew)
 
     def checking_cargo(self):
-        """Function printing python version."""
+        """ clase de cargo"""
         if self.cargo == "":
             self.cargo = 0
 
@@ -51,7 +51,7 @@ class Cargo(Ship):
 
 
 class Cruise(Ship):
-    """Function printing python version."""
+    """ clase de crucero"""
 
     def __init__(self, passengers, draft, crew):
         self.passengers = float(passengers)
